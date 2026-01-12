@@ -9,13 +9,13 @@ CREATE SCHEMA `prueba_tecnica` ;
 ## Variables de entorno
 
 Crear un archivo `.env`:
-
+```sql
 DB_HOST=localhost
 DB_PORT=3306
 DB_USER=root
 DB_PASS=secret
 DB_NAME=prueba_tecnica
-
+```
 ## Ejecutar proyecto
 
 npm install
@@ -27,14 +27,17 @@ http://localhost:3000/api/docs
 ## Endpoints
 
 POST /users
+```json
 {
   "name": "Anthony",
   "email": "anthony@mail.com"
 }
+```
 
 POST /users/{userId}/tasks
+```json
 {
   "title": "Enviar Correo"
 }
-
+```
 GET /users
